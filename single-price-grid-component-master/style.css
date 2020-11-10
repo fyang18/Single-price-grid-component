@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6eff6;
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    border-radius: 5px;
+    box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.4);
+    -webkit-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.4);
+    -moz-box-shadow: 1px 2px 5px 0px rgba(0,0,0,0.4);
+    margin: 163px 402px;
+    overflow: hidden;
+}
+
+.upContainer{
+    background-color: #ffffff;
+    padding: 45px 40px 45px;
+    text-align: left;
+}
+
+.upContainer p {
+    font-size: 15px;
+}
+
+.upContainer p span {
+    display: block;
+    color: hsl(218, 22%, 67%);
+    margin-top: 15px;
+}
+
+#spanUp{
+    margin-top: 22px;
+}
+
+h1 {
+    color: hsl(179, 62%, 43%);
+    font-size: 23px;
+    margin-bottom: 34px;
+    text-align: left;
+}
+
+h2 {
+    color: hsl(71, 73%, 54%);
+    font-size: 17px;
+}
+
+h3 {
+    font-size: 17px;
+}
+
+
+.downContainer {
+    display: flex;
+}
+
+.downContainer p{
+    color: #ffffff;;
+    font-size: 10px;
+}
+
+.downContainer #alignDollars {
+    align-items:center;   
+    display: flex;
+    padding-top: 27px;
+
+}
+
+.downContainer p span {
+    color: #ffffff;;
+}
+
+#leftBox.box p span {
+    font-size: 15px;
+}
+
+#rightBox.box p {
+    font-size: 13px;
+}
+
+#leftBox{
+    background-color: hsl(179, 62%, 43%);
+}
+
+#leftBox p{
+    padding-top: 16px;
+}
+
+#rightBox {
+    background-color: hsl(179, 62%, 43%);
+    opacity: 0.9;
+}
+
+#rightBox .down {
+    display: block;
+    margin-top: 24px;
+}
+
+#rightBox span {
+    display: block;
+    margin-top: 10px;
+
+}
+
+.box {
+    color: hsl(204, 43%, 93%);
+    padding: 45px 40px 45px;
+    width: 50%;
+}
+
+
+
+button {
+    background-color: hsl(71, 73%, 54%);
+    border: none;
+    color: white;
+    display: inline-block;
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    margin-top: 34px;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    width: 100%;
+}
+
+
+footer {
+    margin-bottom: 70px;
+    text-align: center;
+
+}
+
+
+
+
+/* For desktop: */
+@media screen and (max-width: 1265px) {
+    .container {
+        margin:20%;
+    }
+    
+    .upContainer {
+        flex-direction: column ;
+        width: 100%;
+    }
+
+    .downContainer{
+        flex-direction: column ;
+    }
+
+    .box {
+        color: hsl(204, 43%, 93%);
+        padding: 45px 40px 45px;
+        width: 100%;
+    }
+}
+
+/* For mobile*/
+@media screen and (max-width: 645px) {
+    
+    .container {
+        margin: 72px;
+        margin-left: 32px;
+        margin-right: 32px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    .upContainer{
+        padding: 32px 24px 40px;
+    }
+    
+    .upContainer p {
+        font-size: 14px;
+        margin-top: 15px;
+    }
+
+    .upContainer p span {
+        display: inline;
+    }
+
+    .downContainer{
+        padding: 0;
+    }
+
+    .box {
+        padding: 30px 24px;
+    }
+
+    #leftBox.box p span {
+        font-size: 16px;
+    }
+
+    #rightBox.box p {
+        font-size: 14px;
+    }
+}
+
